@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rent Furniture</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+  <link rel="stylesheet" href="css/style.css" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Playwrite+IE+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    :root {
+      --sidebar-w: 20%;
+    }
+
+    body {
+      background: #fff;
+    }
+
+    /* Banner */
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      background-image: url('./Rental/category-banner.73c6e0271a42f14942ef.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #000;
+    }
+
+    /* Sidebar / Content */
+    .left-fixed {
+      position: fixed;
+      top: 0;
+      /* fixed: needs units */
+      left: 0;
+      width: var(--sidebar-w);
+      height: 100vh;
+      background: #fff;
+      overflow-y: auto;
+      padding: 1rem 1.25rem;
+      border-right: 1px solid #eee;
+    }
+
+    .right-scroll {
+      margin-left: var(--sidebar-w);
+      width: calc(100% - var(--sidebar-w));
+      min-height: 100vh;
+      padding: 1rem 1rem 3rem;
+      background: #fff;
+    }
+
+
+
+    /* Cards */
+    .card {
+      border-radius: 15px;
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .condition-tag {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: #6f42c1;
+      color: #fff;
+      font-size: 14px;
+      padding: 3px 10px;
+      border-radius: 5px;
+    }
+
+    .favorite {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 18px;
+      color: #7e5e5e;
+      cursor: pointer;
+    }
+
+    .filters-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: .5rem;
+    }
+
+    .reset-btn {
+      font-size: 12px;
+      padding: .25rem .5rem;
+    }
+
+
+
+
+   
+
+
+   
+    @media (max-width: 768px) {
+      .left-fixed {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-right: 0;
+      }
+
+      .banner {
+        width: 80%;
+        margin-left: 10%;
+      }
+
+      .right-scroll {
+        margin-left: 0;
+        width: 100%;
+      }
+
+      .mobsize {
+        font-size: 12px;
+      }
+    }
+
+ 
+    @media (max-width: 992px) {
+      .pc {
+        font-size: 25px;
+      }
+
+      .left-fixed {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-right: 0;
+      }
+
+      .banner {
+        width: 90%;
+        margin-left: 5%;
+      }
+    }
+  </style>
+</head>
+
+<body class="mx-2 mx-sm-4 my-4">
+
+  <!-- Banner -->
+
+
+  <aside class="left-fixed">
+    <div class="filters-title">
+      <h5 class="fw-bold mb-0">Filters</h5>
+      <button type="button" class="btn btn-outline-secondary reset-btn" id="resetAll">All</button>
+    </div>
+
+    <div class="form-check mb-2">
+      <input class="form-check-input filter-input" type="checkbox" id="filter-bed" data-category="bed">
+      <label class="form-check-label" for="filter-bed">Beds</label>
+    </div>
+
+    <div class="form-check mb-2">
+      <input class="form-check-input filter-input" type="checkbox" id="filter-wardrobe" data-category="wardrobe">
+      <label class="form-check-label" for="filter-wardrobe">Wardrobe</label>
+    </div>
+
+    <div class="form-check mb-2">
+      <input class="form-check-input filter-input" type="checkbox" id="filter-dining" data-category="dining">
+      <label class="form-check-label" for="filter-dining">Dining Sets</label>
+    </div>
+
+    <div class="form-check mb-2">
+      <input class="form-check-input filter-input" type="checkbox" id="filter-sofa" data-category="sofa">
+      <label class="form-check-label" for="filter-sofa">Sofas</label>
+    </div>
+
+    <div class="form-check mb-2">
+      <input class="form-check-input filter-input" type="checkbox" id="filter-bookshelf" data-category="bookshelf">
+      <label class="form-check-label" for="filter-bookshelf">Book Shelves</label>
+    </div>
+
+    <div class="form-check mb-2">
+      <input class="form-check-input filter-input" type="checkbox" id="filter-shoe" data-category="shoe">
+      <label class="form-check-label" for="filter-shoe">Shoe Racks</label>
+    </div>
+
+    <div class="form-check mb-2">
+      <input class="form-check-input filter-input" type="checkbox" id="filter-side" data-category="side">
+      <label class="form-check-label" for="filter-side">Side Tables</label>
+    </div>
+
+    <div class="form-check mb-2">
+      <input class="form-check-input filter-input" type="checkbox" id="filter-dressing" data-category="dressing">
+      <label class="form-check-label" for="filter-dressing">Dressing Tables</label>
+    </div>
+
+    <div class="form-check mb-2">
+      <input class="form-check-input filter-input" type="checkbox" id="filter-mattress" data-category="mattress">
+      <label class="form-check-label" for="filter-mattress">Mattresses</label>
+    </div>
+
+    <div class="form-check mb-2">
+      <input class="form-check-input filter-input" type="checkbox" id="filter-tvunit" data-category="tvunit">
+      <label class="form-check-label" for="filter-tvunit">TV Units</label>
+    </div>
+  </aside>
+
+
+  <main class="right-scroll">
+
+    <div class="row g-4" id="product-container">
+
+      <!------------------------------ Card-BED---------------------------------->
+
+
+
+      <!-------------- ---------------CARDS WARDROBE----------------------->
+
+
+      <!------------------------------ Card dining--------------------------------->
+
+      <!------------------------------ Card Sofa------------------------------->
+
+      <!------------------------------book shelf-------------------------------->
+
+      <!------------------------------  shoe rack-------------------------------->
+
+      <!------------------------------  side table-------------------------------->
+
+      <!----------------------  Dressing Table with Mirror--------------------------------->
+
+      <!-----------------------------Queen Mattress------------------------------->
+
+      <!---------------------------TV Unit (Up to 55")------------------------------>
+
+
+    </div>
+  </main>
+
+
+  
+  <script>
+    const activeCategories = new Set();
+    const filterInputs = document.querySelectorAll('.filter-input');
+    const resetBtn = document.getElementById('resetAll');
+    const productContainer = document.getElementById('product-container');
+
+    const categoryFiles = {
+      bed: "bed.html",
+      wardrobe: "wardrobe.html",
+      dining: "dining.html",
+      sofa: "sofa.html",
+      bookshelf: "bookshelf.html",
+      shoe: "shoe.html",
+      side: "side.html",
+      dressing: "dressing.html",
+      mattress: "mattress.html",
+      tvunit: "tvunit.html"
+    };
+ 
+
+
+    async function loadProducts() {
+      for (let [cat, file] of Object.entries(categoryFiles)) {
+        const res = await fetch(file);
+        const html = await res.text();
+        productContainer.insertAdjacentHTML("beforeend", html);
+      }
+      updateDisplay(true); // show all by default
+    }
+
+    filterInputs.forEach(cb => {
+      cb.addEventListener('change', (e) => {
+        const cat = e.target.dataset.category;
+        if (e.target.checked) {
+          activeCategories.add(cat);
+        } else {
+          activeCategories.delete(cat);
+        }
+        updateDisplay();
+      });
+    });
+
+    resetBtn.addEventListener('click', () => {
+      activeCategories.clear();
+      filterInputs.forEach(cb => cb.checked = false);
+      updateDisplay(true);
+    });
+
+    function updateDisplay(showAll = false) {
+      const products = document.getElementsByClassName('product');
+      const showEverything = showAll || activeCategories.size === 0;
+
+      for (let i = 0; i < products.length; i++) {
+        const product = products[i];
+        if (showEverything) {
+          product.style.display = "block";
+          continue;
+        }
+        let match = false;
+        activeCategories.forEach(cat => {
+          if (product.classList.contains(cat)) match = true;
+        });
+        product.style.display = match ? "block" : "none";
+      }
+    }
+
+    loadProducts();
+  </script>
+
+
+</body>
+
+</html>

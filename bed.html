@@ -1,0 +1,283 @@
+<!-- Bed Product 1 -->
+<div class="col-sm-6 col-md-4 product bed">
+    <div class="card position-relative shadow">
+        <div class="condition-tag">Mint Condition</div>
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <img src="Rental/Group 8-3zohbb.png" class="card-img-top" alt="Wooden Queen Bed">
+        <div class="card-body text-center">
+            <h6 class="card-title">Wooden Queen Size Bed</h6>
+        </div>
+    </div>
+</div>
+
+<!-- Bed Product 2 -->
+<div class="col-sm-6 col-md-4 product bed">
+    <div class="card position-relative shadow">
+        <div class="condition-tag">Mint Condition</div>
+        <div class="favorite"></div>
+        <img src="Rental/queen-bed-wooden.jpg" class="card-img-top" alt="Wooden Queen Bed">
+        <div class="card-body text-center">
+            <h6 class="card-title">Wooden Queen Size Bed</h6>
+        </div>
+    </div>
+</div>
+
+<!-- Bed Product 3 -->
+<div class="col-sm-6 col-md-4 product bed">
+    <div class="card position-relative shadow">
+        <div class="condition-tag">Mint Condition</div>
+        <div class="favorite"></div>
+        <img src="Rental/single-bed-wooden.jpg" class="card-img-top" alt="Single Wooden Bed">
+        <div class="card-body text-center">
+            <h6 class="card-title">Single Wooden Bed</h6>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bed Product 4 -->
+<div class="col-sm-6 col-md-4 product bed">
+    <div class="card position-relative shadow">
+        <div class="condition-tag">Mint Condition</div>
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <img src="Rental/Group 8-3zohbb.png" class="card-img-top" alt="Wooden Queen Bed">
+        <div class="card-body text-center">
+            <h6 class="card-title">Wooden Queen Size Bed</h6>
+        </div>
+    </div>
+</div>
+
+<!-- Bed Product 5 -->
+<div class="col-sm-6 col-md-4 product bed">
+    <div class="card position-relative shadow">
+        <div class="condition-tag">Mint Condition</div>
+        <div class="favorite"></div>
+        <img src="Rental/queen-bed-wooden.jpg" class="card-img-top" alt="Wooden Queen Bed">
+        <div class="card-body text-center">
+            <h6 class="card-title">Wooden Queen Size Bed</h6>
+        </div>
+    </div>
+</div>
+
+<!-- Bed Product 6 -->
+<div class="col-sm-6 col-md-4 product bed">
+    <div class="card position-relative shadow">
+        <div class="condition-tag">Mint Condition</div>
+        <div class="favorite"></div>
+        <img src="Rental/single-bed-wooden.jpg" class="card-img-top" alt="Single Wooden Bed">
+        <div class="card-body text-center">
+            <h6 class="card-title">Single Wooden Bed</h6>
+        </div>
+    </div>
+</div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wooden Queen Size Bed - For Sale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Custom Styles - adjusted for Buying */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .product-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .image-card {
+            position: relative;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05); 
+            overflow: hidden;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px; 
+        }
+        .wishlist-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+        .wishlist-icon i {
+            color: gray;
+        }
+        .details-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            min-height: 100%;
+        }
+        .company-logo {
+            font-weight: bold;
+            color: #495057; 
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        /* Adjusted Button for 'Buy' */
+        .buy-btn {
+            background-color: #007bff; /* Blue for a 'Purchase' button */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 20px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        /* Price Information Box Styling */
+        .price-info-box {
+            background-color: #f7f7f7;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .label-text {
+            color: #6c757d; 
+            font-size: 0.9rem;
+        }
+        .price-current {
+            font-size: 1.8rem; /* Made the price slightly larger */
+            font-weight: bold;
+            color: #212529;
+        }
+        .price-strike {
+            color: #6c757d;
+            text-decoration: line-through;
+            margin-left: 10px;
+            font-size: 1.1rem;
+        }
+        .discount-badge {
+            background-color: #dc3545; /* Red for discount */
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-left: 10px;
+            height: fit-content;
+        }
+        .availability-text {
+            color: #198754; /* Green for 'In Stock' */
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+        /* Delivery Information Styling */
+        .delivery-info {
+            margin-top: 25px;
+            color: #495057;
+        }
+        .delivery-info i {
+            margin-right: 10px;
+            color: #6c757d;
+        }
+        .action-btn-primary {
+            background-color: #ffc107; /* Yellow/Orange for Add to Cart */
+            color: #212529;
+            border-radius: 8px;
+            padding: 12px 0;
+            margin-top: 25px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: none;
+        }
+        .action-btn-secondary {
+            background-color: #212529; /* Dark/Black for Buy Now */
+            color: white;
+            border-radius: 8px;
+            padding: 12px 0;
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container product-container">
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="image-card">
+                <img src="Screenshot 2025-10-08 130005.jpg" class="product-image" alt="Wooden Queen Size Bed">
+                
+                <div class="wishlist-icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="details-card">
+                <div class="company-logo">BHADEPAY</div>
+                
+                <h1 class="h3 fw-bold mb-4">Wooden Queen Size Bed</h1>
+
+                <div class="d-flex align-items-center mb-4">
+                    <button class="buy-btn me-3">For Sale</button>
+                    
+                    <div>
+                        <span class="text-muted me-2">Size:</span>
+                        <button class="tenure-select-btn" type="button">
+                            Queen
+                        </button>
+                    </div>
+                </div>
+
+                <div class="price-info-box">
+                    <p class="label-text mb-2">Today's Price</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="price-current">₹11,999</span>
+                        <span class="price-strike">₹14,999</span>
+                        <span class="discount-badge">20% off</span>
+                    </div>
+
+                    <p class="availability-text">
+                        <i class="fas fa-check-circle me-1"></i> In Stock - Limited Units!
+                    </p>
+                </div>
+
+                <div class="delivery-info">
+                    <p class="mb-2">
+                        <i class="fas fa-shipping-fast"></i> Delivery in 5-7 Days
+                    </p>
+                    <p class="mb-0">
+                        <i class="fas fa-map-marker-alt"></i> Delivering to Pune
+                    </p>
+                </div>
+                
+                <div class="row g-2">
+                    <div class="col-12">
+                        <button class="action-btn-primary w-100">
+                            <i class="fas fa-shopping-cart me-2"></i> Add to Cart
+                        </button>
+                    </div>
+                    <div class="col-12">
+                        <button class="action-btn-secondary w-100">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

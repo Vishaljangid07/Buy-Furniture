@@ -1,0 +1,394 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>buy Homepage</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Playwrite+IE+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .project-footer {
+            background: #fffbfb;
+            border-top: 2px solid #6b4d9f;
+            font-family: Arial, sans-serif;
+            padding: 40px 20px;
+            color: #1b1b20;
+            font-size: 14px;
+        }
+
+        .project-footer h5 {
+            color: #000000;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .project-footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 15px 0;
+        }
+
+        .project-footer a.nav-link {
+            color: #933fd0;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        .project-footer button.btn-primary {
+            background: #6b2e78;
+            border: none;
+            color: white;
+            padding: 9px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .project-footer button.btn-primary:hover {
+            background: #552d91;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container ">
+
+            <a class="navbar-brand pc p-0 " href="#">BUY FURNITURE </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bolder">
+                    <li class="nav-item"><a class="nav-link" href="HomePage.html" onclick="showPage('home')">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="RentFurniture.html">Buy Furniture</a></li>
+                    <!-- <li class="nav-item "><a class="nav-link" href="RentAppliance.html">Rent Appliance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="BuyFurniture.html">Buy Furniture</a></li> -->
+
+                </ul>
+                <a href="login.html"> <button class="login-btn m-2 fw-bolder " type="button">Login</button></a>
+                <button class="icon-btn m-2" type="button"><i class="bi bi-telephone"></i></button>
+                <button class="icon-btn m-2" type="button"><i class="bi bi-cart"></i></button>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container promo-section">
+        <div class="row g-4">
+            <a href="RentFurniture.html">
+                <div class="col-md-8 ab">
+                    <div class="promo-card d-flex flex-column justify-content-center align-items-start">
+                    </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <div class="promo-card-secondary d-flex flex-column justify-content-center align-items-start">
+
+
+            </div>
+        </div>
+    </div>
+    </div> <!---------------------- offer discount -------------------------------->
+
+
+    <div class="container py-5 mb-3">
+        <h2 class="mb-4  fw-bold pc">Offers & Discounts</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+
+            <div class="col">
+                <div class="card h-100 card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title-custom">Flat 5% Off</h5>
+                        <p class="card-text">05% Off on your monthly rentals.</p>
+                        <p class="coupon-code">Coupon Code: 8PSALE5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title-custom">Flat 10% Off</h5>
+                        <p class="card-text">10% Off on your monthly rentals.</p>
+                        <p class="coupon-code">Coupon Code: 8PSALE10</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title-custom">Flat 75% Off</h5>
+                        <p class="card-text">Flat 75% off on your rent on 8th and 12th month of your rental tenure</p>
+                        <p class="coupon-code">Coupon Code: 2BPSALE75</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title-custom">Flat 50% Off</h5>
+                        <p class="card-text">Flat 50% off on your rent on 8th and 12th month of your rental tenu</p>
+                        <p class="coupon-code">Coupon Code: 2BPSALE50</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!---------------------Popular Categories---------------------------->
+
+    <div class="container mb-5">
+        <h2 class="fw-bold mb-2 pc">Popular Categories</h2>
+        <p class="mb-4 text-secondary">Discover Your Perfect Match: Choose from a Wide Range of Categories</p>
+
+        <div class="row g-4 p-5">
+            <div class="col-12 col-md-6">
+                <div class="category-card">
+                    <div class="category-title pc">Furniture</div>
+                    <div class="category-subtitle">Create your dream home</div>
+                    <a href=""><img src="Rental/test-beds-n-mattresses.avif" alt="Furniture" class="category-image" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="category-card">
+                    <div class="category-title pc">Appliances</div>
+                    <div class="category-subtitle">Function better with appliances.</div>
+                    <a href=""><img src=" Rental/test-wm.avif" alt="Appliances" class="category-image" /></a>
+                </div>
+            </div>
+        </div>
+        <!------------------------Feature Section--------------------------------------->
+        <section class="feature-section mb-4">
+            <div class="container ">
+                <div class="row text-center text-md-start">
+
+                    <div class="col-12 col-md-6 col-lg-3 feature-item">
+                        <i class="bi bi-truck feature-icon"></i>
+                        <div class="feature-title">Hassle free relocation</div>
+                        <p class="feature-desc">Simplify your move and leave the heavy lifting to us!</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 feature-item">
+                        <i class="bi bi-star feature-icon"></i>
+                        <div class="feature-title">No Maintenance Worries</div>
+                        <p class="feature-desc">From regular wear-and-tear to accidental damage, we take care of it all.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 feature-item">
+                        <i class="bi bi-arrows-move feature-icon"></i>
+                        <div class="feature-title">Customise your lifestyle</div>
+                        <p class="feature-desc">Experience the flexibility of customizing your living space with us when
+                            you
+                            rent.</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 feature-item">
+                        <i class="bi bi-arrow-counterclockwise feature-icon"></i>
+                        <div class="feature-title">Upgrade</div>
+                        <p class="feature-desc">Always stay ahead of the curve with our ever-evolving selection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------------------LETS GET STARTED------------------------>
+        <div class="container py-5">
+
+            <!-- Section Heading -->
+            <div class="text-start mb-5">
+                <h2 class="fw-bold pc">Let's get started!</h2>
+                <p class="text-muted">Discover How Easy It Is to Transform Your Space</p>
+            </div>
+
+            <div class="row align-items-center">
+                <!-- Left Images -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <img src="Rental/3-seater-sofa-aqua.jpg" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6 ">
+                            <img src="Rental/study-table.jpg" class="img-fluid rounded">
+                        </div>
+
+                        <div class="col-6">
+                            <img src="Rental/shoe-rack.jpg" class="img-fluid rounded">
+                        </div>
+
+                        <div class="col-6">
+                            <img src="Rental/side-table.jpg" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Timeline -->
+                <div class="col-md-6">
+                    <div class="timeline">
+                        <div class="timeline-step">
+                            <h6>Find:</h6> <span>Explore and discover the perfect pieces for your home.</span>
+                        </div>
+                        <div class="timeline-step">
+                            <h6>Select:</h6> <span>Choose your favorite items and add them to your cart.</span>
+                        </div>
+                        <div class="timeline-step">
+                            <h6>Order:</h6> <span>Checkout securely and select your preferred delivery method.</span>
+                        </div>
+                        <div class="timeline-step">
+                            <h6>Freedom to Change:</h6> <span>Enjoy the flexibility to make adjustments as
+                                needed.</span>
+                        </div>
+                        <div class="timeline-step">
+                            <h6>Enjoy:</h6> <span>Sit back, relax, and enjoy your new furniture and appliances!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------customer spotlight--------------------->
+        <section class="spotlight-section">
+            <div class="container ">
+                <div class=" row text-center text-md-start">
+
+
+                    <div class="row align-items-center">
+                        <!-- Left Stats -->
+                        <div class="col-md-5 pc">
+                            <h2 class="fw-bold pc">Customer Spotlight!</h2>
+                            <p class="text-muted">Bringing Furniture Home</p>
+
+                            <p class="stat-number">20K+ <br><small class="text-muted">Trusted Customers</small>
+                            </p>
+                            <p class="stat-number">35K+ <br><small class="text-muted">Subscriptions
+                                    Served</small></p>
+                            <p class="stat-number">4.8 <a href="https://www.google.com/"> <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                        width="40" alt="Google"> </a><br><small class="text-muted">Google Rating</small>
+                            </p>
+                        </div>
+
+                        <!-- Right Testimonial -->
+                        <div class="col-md-7">
+                            <div class="testimonial-box text-center position-relative">Lorem ipsum dolor sit, amet
+                                consectetur adipisicing elit. Dolorum beatae ipsam velit natus, sequi porro deserunt nam
+                                iusto sed. Ita=ratione fuga molestiae quia repellendus?
+                                Eaque suscipit cumque, odio alias earum sequi et qui dolorem itaque est commodi culpa
+                                quaerat voluptatum error, veritatis praesentium, rem obcaecati blanditiis non distinctio
+                                aspernatur. Totam recusandae animi dolore esse!</p>
+                                <h6 class="fw-bold mt-3">~ Irixx Mutum</h6>
+
+                                <!-- Arrows -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Button -->
+                    <div class="text-center">
+                        <a href="https://www.google.com/" class="view-google-btn">View All On Google </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!---------------------------------footer section------------------------>
+
+
+
+        <section>
+            <footer class="project-footer py-5 container">
+                <div class="row text-center text-md-start">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Rent Furniture</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="HomePage.html" class="nav-link p-0">Home</a></li>
+                            <li class="nav-item mb-2"><a href="RentFurniture.html" class="nav-link p-0">Furniture</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="BuyFurniture.html" class="nav-link p-0">Buy Furniture</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="RentAppliance.html" class="nav-link p-0">Appliances</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Company</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About Us</a></li>
+
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Privacy Policy</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Support</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Help Center</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Subscribe to Our Newsletter</h5>
+                            <p>Get monthly updates on new furniture and appliances rentals.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="email" class="form-control" placeholder="Email address"
+                                    required />
+                                <button class="btn btn-primary" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p class="mb-0 text-secondary">© 2025 Rent Furniture & Appliances. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex mb-0">
+                        <li class="ms-3"><a class="link-body-emphasis social-icon" href="#" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis social-icon" href="#" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis social-icon" href="#" aria-label="Twitter"><i
+                                    class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </section>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+
+            document.querySelector('.bi-cart').addEventListener('click', function () {
+                alert('Cart clicked!');
+            });
+
+        </script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+
+</html>
